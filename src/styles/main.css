@@ -1,1 +1,145 @@
-/* No CSS *//*# sourceMappingURL=main.css.map */
+html, body, #root, #app {
+  height: 100vh;
+  width: 100%;
+}
+
+#app {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+#app header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 8vh;
+  text-align: center;
+}
+
+#app #main-content {
+  height: 82vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#app #main-content #container-form {
+  border: 1px solid #dee2e6;
+  border-radius: 5px;
+}
+
+#app #main-content #container-form .tab-content {
+  height: 80%;
+  width: 100%;
+}
+
+#app #main-content #container-form .tab-content .active {
+  overflow: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  width: 100%;
+  height: 95%;
+}
+
+#app #main-content #container-form .tab-content .active div {
+  margin-top: 30px;
+  width: 100%;
+}
+
+#app #main-content #container-form .tab-content .active div input {
+  width: 100;
+}
+
+#app #main-content #container-form .tab-content form {
+  width: 100%;
+}
+
+#app #main-content #container-form #buttons-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  height: 20%;
+  border-top: 1px solid #dee2e6;
+}
+
+#app #main-content #container-form #buttons-form button {
+  width: 80%;
+  margin: 5px;
+  margin-top: 10px;
+}
+
+#app #main-content div {
+  width: 48%;
+}
+
+#app #footer {
+  margin-top: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#app #footer p {
+  margin-bottom: 1px;
+}
+
+#app #footer svg {
+  margin: 5px;
+}
+
+.border-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom: 1px solid #dee2e6;
+  padding: 15px;
+}
+/*# sourceMappingURL=main.css.map */
