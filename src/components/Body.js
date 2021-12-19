@@ -25,7 +25,16 @@ export default class Body extends Component{
                         <Button>Reset</Button>
                     </div>
                 </div>
-                <div id="container-curriculum" ></div>
+                <div id="container-curriculum" >
+                <Tabs>
+                        <Tab  title="First type form" eventKey="first form">
+                        </Tab>
+                        <Tab title="Second type form" eventKey="second form">
+                        </Tab>
+                        <Tab title="Third type form" eventKey="third form">
+                        </Tab>
+                    </Tabs>
+                </div>
             </div>
         )
     }

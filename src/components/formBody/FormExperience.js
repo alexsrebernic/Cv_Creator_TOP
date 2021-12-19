@@ -79,13 +79,16 @@ class FormExperience extends Component {
                         </Form.Label>
                         <Form.Control size="lg" type="text" placeholder="To"/>
                     </Form.Group>
-                    <Form.Group  >
+                    <Form.Group>
                         <Form.Label>
-                            Delete Experience
+                            Details
                         </Form.Label>
-                        <Form.Control onClick={this.props.onClick} id={this.props.id} className="bg-danger bg-gradient " size="lg" type="button" value="Delete" placeholder="Delete"/>
+                        <Form.Control size="lg" as="textarea"  placeholder="Details"/>
                     </Form.Group>
+                   
             </div>
+            <Form.Control onClick={this.props.onClick} id={this.props.id} className="bg-danger bg-gradient w-100 p-2 mt-4" size="lg" type="button" value="Delete" placeholder="Delete"/>
+
          </Form>
         )
     }
