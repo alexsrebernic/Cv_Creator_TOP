@@ -32,10 +32,10 @@ export default class Experience extends Component {
         let formList = this.state.formList
         return(
             <div className="mt-0 h-100 overflow-auto d-flex flex-column justify-content-start align-items-center"> 
-            {formList}
-            <div className="mb-3 mt-3 d-flex justify-content-center align-items-center">
-                <Button className="w-50 p-2.5" onClick={this.addFormExperience}>Add</Button>
-            </div>
+                {formList}
+                <div className="mb-3 mt-3 d-flex justify-content-center align-items-center">
+                    <Button className="w-50 p-2.5" onClick={this.addFormExperience}>Add</Button>
+                </div>
             </div>
           
         )
@@ -65,16 +65,14 @@ class FormExperience extends Component {
                         </Form.Label>
                         <Form.Control size="lg" type="text" placeholder="City"/>
                     </Form.Group>
-                </div>
-                <div className="col mt-0">
+            </div>
+            <div className="col mt-0">
                     <Form.Group >
                         <Form.Label>
                             From
                         </Form.Label>
                         <Form.Control size="lg" type="text" placeholder="From"/>
                     </Form.Group>
-                    
-                    
                     <Form.Group >
                         <Form.Label>
                             To
@@ -82,12 +80,12 @@ class FormExperience extends Component {
                         <Form.Control size="lg" type="text" placeholder="To"/>
                     </Form.Group>
                     <Form.Group  >
-                    <Form.Label>
+                        <Form.Label>
                             Delete Experience
                         </Form.Label>
                         <Form.Control onClick={this.props.onClick} id={this.props.id} className="bg-danger bg-gradient " size="lg" type="button" value="Delete" placeholder="Delete"/>
                     </Form.Group>
-                </div>
+            </div>
          </Form>
         )
     }

@@ -42,7 +42,6 @@ export default class Education extends Component {
 }
 
 class FormEducation extends Component {
-
     render(){
         return(
          <Form className="row align-items-start border-form">
@@ -79,8 +78,8 @@ class FormEducation extends Component {
                         </Form.Label>
                         <Form.Control size="lg" type="text" placeholder="From"/>
                     </Form.Group>
-                    <Form.Group  >
-                    <Form.Label>
+                    <Form.Group>
+                        <Form.Label>
                             To
                         </Form.Label>
                         <Form.Control size="lg" type="text" placeholder="To"/>
