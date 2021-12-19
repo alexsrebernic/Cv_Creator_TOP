@@ -1,8 +1,8 @@
 import { Component } from "react";
 import {Tabs,Tab,Button} from 'react-bootstrap'
-import PersonalInformation from "./inputBody/FormPersonalInformation";
-import Experience from "./inputBody/FormExperience";
-import Education from "./inputBody/FormEducation"
+import PersonalInformation from "./formBody/FormPersonalInformation";
+import Experience from "./formBody/FormExperience";
+import Education from "./formBody/FormEducation"
 export default class Body extends Component{
     moveTabs(e){
 

@@ -41,16 +41,18 @@ html, body, #root, #app {
 }
 
 #app #main-content #container-form {
-  border: 1px solid #dee2e6;
   border-radius: 5px;
 }
 
 #app #main-content #container-form .tab-content {
-  height: 80%;
+  height: 75%;
   width: 100%;
 }
 
 #app #main-content #container-form .tab-content .active {
+  border-bottom: 1px solid #dee2e6;
+  border-left: 1px solid #dee2e6;
+  border-right: 1px solid #dee2e6;
   overflow: auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -90,8 +92,8 @@ html, body, #root, #app {
       -ms-flex-direction: column;
           flex-direction: column;
   width: 100%;
-  height: 20%;
-  border-top: 1px solid #dee2e6;
+  height: 15%;
+  border: 1px solid #dee2e6;
 }
 
 #app #main-content #container-form #buttons-form button {
