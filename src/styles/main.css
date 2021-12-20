@@ -1,3 +1,68 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Nunito+Sans:wght@400;600&family=Russo+One&display=swap");
+#first-form {
+  font-family: 'Lato', sans-serif;
+  border: 1px solid black;
+}
+
+#first-form #header-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 40%;
+  width: 100%;
+}
+
+#first-form #header-title #title-curriculum {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#first-form #header-title #personal-information-1 {
+  margin-top: 50px;
+}
+
+#first-form #header-title #personal-information-1 div {
+  margin-top: 2px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#first-form #header-title #img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#first-form #header-title img {
+  border: 1px solid black;
+  width: 60%;
+  height: 100%;
+}
+
+#first-form #experience {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#first-form #experience #date {
+  height: 100%;
+}
+
+#first-form #experience p {
+  font-weight: bold;
+  font-size: 17px;
+}
+
 html, body, #root, #app {
   height: 100vh;
   width: 100%;
@@ -16,7 +81,7 @@ html, body, #root, #app {
           justify-content: flex-end;
 }
 
-#app header {
+#app #header-app {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -51,7 +116,6 @@ html, body, #root, #app {
   border-bottom: 1px solid #dee2e6;
   border-left: 1px solid #dee2e6;
   border-right: 1px solid #dee2e6;
-  overflow: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -61,6 +125,12 @@ html, body, #root, #app {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+}
+
+#app #main-content #container-curriculum .tab-content .active #first-form {
+  height: 100vh;
+  width: 97%;
+  margin-top: 5px;
 }
 
 #app #main-content #container-form {
