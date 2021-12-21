@@ -1,11 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Nunito+Sans:wght@400;600&family=Russo+One&display=swap');
 #first-form{
+    margin-top: 5px;
+    min-height: 100vh;
     font-family: 'Lato', sans-serif;
     border: 1px solid black;
     #header-title {
         display: flex;
         height: 40%;
        width: 100%;
+       div {
+           height: 100%;
+       }
+       #full-name-title {
+           min-height: 4em;
+       }
        #title-curriculum {
            display: flex;
        }
@@ -21,6 +29,7 @@
         #img {
             display: flex;
             justify-content: center;
+            height: 20em;
         }
         img {
             border:1px solid black;
@@ -28,7 +37,7 @@
             height: 100%;
         }
     }
-    #experience{
+    #experience,#education{
         display: flex;
         #date {
             height: 100%;
@@ -38,4 +47,5 @@
             font-size: 17px;
         }
     }
+    
 }

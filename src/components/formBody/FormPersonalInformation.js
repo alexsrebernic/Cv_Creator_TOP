@@ -47,7 +47,7 @@ export default class PersonalInformation extends Component{
                     <Form.Label>
                         Photo
                     </Form.Label>
-                    <Form.Control onChange={this.props.onChange} name="photo"  size="lg" type="file" placeholder="Photo"/>
+                    <Form.Control onChange={this.props.onChange} name="photo"  size="lg" type="text" placeholder="Url"/>
                 </Form.Group>
                 <Form.Group>
                     <Form.Label>

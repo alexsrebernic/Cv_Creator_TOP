@@ -25,19 +25,19 @@ class FormEducation extends Component {
                         <Form.Label>
                             University/Course/School name
                         </Form.Label>
-                        <Form.Control  type="text" placeholder="University/Course/School name"/>
+                        <Form.Control name="ucs" id={this.props.id} onClick={this.props.getIndexEducation} onChange={this.props.onChange} type="text" placeholder="University/Course/School name"/>
                     </Form.Group>
                     <Form.Group >
                         <Form.Label>
                             City
                         </Form.Label>
-                        <Form.Control  type="text" placeholder="City"/>
+                        <Form.Control name="city" id={this.props.id} onClick={this.props.getIndexEducation} onChange={this.props.onChange}  type="text" placeholder="City"/>
                     </Form.Group>
                     <Form.Group >
                         <Form.Label>
                             Degree
                         </Form.Label>
-                        <Form.Control  type="text" placeholder="Degree"/>
+                        <Form.Control name="degree" id={this.props.id} onClick={this.props.getIndexEducation} onChange={this.props.onChange}  type="text" placeholder="Degree"/>
                     </Form.Group>
                 </div>
                 <div className="col mt-0">
@@ -45,26 +45,26 @@ class FormEducation extends Component {
                         <Form.Label>
                             Subject
                         </Form.Label>
-                        <Form.Control  type="text" placeholder="Subject"/>
+                        <Form.Control name="subject" id={this.props.id} onClick={this.props.getIndexEducation} onChange={this.props.onChange}  type="text" placeholder="Subject"/>
                     </Form.Group>
                     <Form.Group >
                         <Form.Label>
                             From
                         </Form.Label>
-                        <Form.Control  type="text" placeholder="From"/>
+                        <Form.Control name="from" id={this.props.id} onClick={this.props.getIndexEducation} onChange={this.props.onChange} type="text" placeholder="From"/>
                     </Form.Group>
                     <Form.Group>
                         <Form.Label>
                             To
                         </Form.Label>
-                        <Form.Control  type="text" placeholder="To"/>
+                        <Form.Control name="to" id={this.props.id} onClick={this.props.getIndexEducation} onChange={this.props.onChange} type="text" placeholder="To"/>
                     </Form.Group>
                 </div>
                 <Form.Group>
                     <Form.Label>
                         Details
                     </Form.Label>
-                    <Form.Control className="w-100 "  as="textarea"  placeholder="Details"/>
+                    <Form.Control name="details" id={this.props.id} onClick={this.props.getIndexEducation} onChange={this.props.onChange} className="w-100 "  as="textarea"  placeholder="Details"/>
                 </Form.Group>
                     <Form.Control onClick={this.props.onClick} id={this.props.id} className="bg-danger bg-gradient w-100 p-2 mt-4"  type="button" value="Delete" placeholder="Delete"/>     
                 </Form>

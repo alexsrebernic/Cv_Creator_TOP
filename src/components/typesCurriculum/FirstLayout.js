@@ -4,11 +4,11 @@ class FirstType extends Component{
     render(){
         const {personalInformation} = this.props
         return(
-            <div id="first-form">
+            <div id="first-form" className="first-form">
                 <header id="header-title" className="p-4 d-f justify-content-between">
                 <div id="header-information">
                     <div className="h-50 w-100" id="full-name-title">
-                        <h1>{personalInformation.firstname} {personalInformation.lastname}</h1>
+                        <h1 className="text-break">{personalInformation.firstname} {personalInformation.lastname}</h1>
                        
                         <h3 >{personalInformation.title}</h3>
                     </div>
@@ -67,7 +67,7 @@ class FirstType extends Component{
                         <h2>Education Experience</h2>
                     </header>
                     <div className="w-100  mt-4" id="education-container">
-        
+                    {this.props.educationElementsArray}
                     </div>
                 </div>
             </div>
@@ -102,21 +102,24 @@ class ExperienceContainer extends Component{
 
 class EducationContainer extends Component{
     render(){
+        const {educationCurriculumArray} = this.props
         return(
-            <div className="w-100" id="education">
-                    <div id="date">
-                    <span id="from">1234-</span>
-                    <span id="to">1234</span>
+            <div className="w-100 d-f " id="education">
+                    <div className="w-25 h-100" id="date">
+                    <span className="w-100 h-100" id="from-to">{educationCurriculumArray.from}-{educationCurriculumArray.to}</span>
                 </div>
-                <div id="education-info">
-                    <h4 id="university-city-info">
-                        example of position at example of company , example of city
-                    </h4>
-                    <p id="degree">example degree</p>
-                    <div id="details-education-container">
-                        <ul>
-                                
-                        </ul>
+                <div className="d-f flex-direction-column w-75" id="education-info">
+                    <p className="w-100 font-weight-bold text-break" id="university-city-info">
+                       {educationCurriculumArray.subject} at {educationCurriculumArray.ucs},{educationCurriculumArray.city}
+                    </p>
+                    <p id="degree">{educationCurriculumArray.degree}</p>
+                    <div className="w-100" id="details-education-container">
+                    <ul className="w-100">
+                    <li>
+                                {educationCurriculumArray.details}
+                        </li>
+                    </ul>
+                       
                     </div>
                 </div>
               
