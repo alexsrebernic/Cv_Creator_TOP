@@ -15,4 +15,5 @@ In this app you can create your curriculum vitae, with full information like:
 The steps to run this app locally are:  
 
 1. Clone,pull or download this repository in your PC.
-2.  Open and run in terminal **npm start**
+2. Open and run in terminal **npm start**
+3. Go to http://localhost:3000
