@@ -10,3 +10,9 @@ In this app you can create your curriculum vitae, with full information like:
 
 
 [LIVE SERVER](https://alexsrebernic.github.io/Cv_Creator_Top/)
+
+# Run app locally  
+The steps to run this app locally are:  
+
+1. Clone,pull or download this repository in your PC.
+2.  Open and run in terminal **npm start**
